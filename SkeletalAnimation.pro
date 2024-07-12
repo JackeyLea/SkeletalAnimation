@@ -1,4 +1,5 @@
 QT       += core gui
+QT       += openglwidgets
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -11,14 +12,11 @@ CONFIG += c++17
 INCLUDEPATH += $$PWD/include
 
 SOURCES += \
-    src/main.cpp \
-    src/widget.cpp
+    src/qglwidget.cpp \
+    src/main.cpp
 
 HEADERS += \
-    include/widget.h
-
-FORMS += \
-    ui/widget.ui
+    include/qglwidget.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
